@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Item Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Name"/>
+    <EditText
+        android:id="@+id/editItemQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Qty" />
+    <EditText
+        android:id="@+id/editItemRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Rate"/>
+
+    <EditText
+        android:id="@+id/editItemTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Item Total" />
+
+
+    <Button
+        android:id="@+id/btnGeneratePDF"
+        android:text="Generate PDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
