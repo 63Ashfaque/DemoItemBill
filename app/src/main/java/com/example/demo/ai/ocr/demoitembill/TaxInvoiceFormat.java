@@ -52,8 +52,8 @@ public class TaxInvoiceFormat {
 		try {
 			// Create a new file in external storage
 			int b = (int) (random() * (99 - 1 + 1) + 1);
-			//String fileName = "Bill" + b + ".pdf";
-			String fileName = "Bill.pdf";
+			String fileName = "Bill" + b + ".pdf";
+			//String fileName = "Bill.pdf";
 			File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
 			File file = new File(path, fileName);
 
