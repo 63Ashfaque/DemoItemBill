@@ -29,7 +29,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-public class TaxInvoiceFormat {
+public class TaxInvoiceFormatPDF {
 
 	public static Document document;
 	private static LineSeparator lineSeparator;

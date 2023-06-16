@@ -6,8 +6,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
-
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -113,5 +113,20 @@ public class Utils {
 			return "0";
 		DecimalFormat decimalFormat = new DecimalFormat("##,##,##0.00");
 		return decimalFormat.format(number);
+	}
+
+	/**
+	 * getDateConverter("01/01/2023","dd/MM/yyyy","dd-MMM-yyyy")
+	 */
+	public static String getDateConverter(String selectedDate, String patternInput, String patternOutput) {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(patternInput, Locale.US);
+		Date parsedDate = null;
+		try {
+			parsedDate = simpleDateFormat.parse(selectedDate);
+		} catch (ParseException e) {
+			logD(e.getMessage());
+		}
+		SimpleDateFormat printLabel = new SimpleDateFormat(patternOutput, Locale.US);
+		return printLabel.format(parsedDate);
 	}
 }

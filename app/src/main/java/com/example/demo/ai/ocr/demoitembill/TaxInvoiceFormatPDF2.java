@@ -29,9 +29,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
-import frictionfreepayment.com.paytonicseller.model.ReportItem;
 
-public class TaxInvoiceFormat2 {
+public class TaxInvoiceFormatPDF2 {
 
 	public static Document document;
 	private static LineSeparator lineSeparator;
